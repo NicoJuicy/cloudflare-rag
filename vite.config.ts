@@ -15,7 +15,7 @@ export default defineConfig({
         v3_throwAbortReason: true,
       },
     }),
-    tsconfigPaths(),
+    tsconfigPaths({ projects: ["./tsconfig.json"] }),
   ],
   server: {
     proxy: {
